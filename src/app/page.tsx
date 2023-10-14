@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <main>
       {events.map((event) => (
-        <Event title={event.title} />
+        <Event key={event.id} title={event.title} />
       ))}
       <input
         type="datetime-local"
